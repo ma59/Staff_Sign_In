@@ -10,12 +10,20 @@ namespace Staff_sign_in
     {
         static void Main(string[] args)
         {
-            var marlon = new Person("Marlon Adams");
+            Console.WriteLine("Enter name");
+            var name = Console.ReadLine();
 
-            var alex = new Person("Alex Williams");
-            Console.WriteLine(marlon.Name);
+            ///assigns an id to a person
+            int id = 1;
+            int temp = id++;
+            string staffid = Convert.ToString(temp);
 
-            Console.WriteLine(alex.Name);
+
+            var temp1 = new Person(name, staffid);
+            Console.WriteLine(name);
+            Console.WriteLine(staffid);
+            
+
             Console.ReadLine();
         }
     }

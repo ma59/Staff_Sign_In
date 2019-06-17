@@ -9,10 +9,12 @@ namespace Staff_sign_in
     public class Person
     {
         public string Name { get; set; }
-        public Person(string name)
-        {
 
+        public string StaffID { get; set; }
+        public Person(string name, string staffid)
+        {
             Name = name;
+            StaffID = staffid;
         }
     }
 }
