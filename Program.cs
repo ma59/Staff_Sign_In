@@ -10,6 +10,8 @@ namespace Staff_sign_in
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello world");
+            Console.ReadLine();
         }
     }
 }
