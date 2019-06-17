@@ -10,21 +10,25 @@ namespace Staff_sign_in
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter name");
-            var name = Console.ReadLine();
-
-            ///assigns an id to a person
             int id = 1;
-            int temp = id++;
-            string staffid = Convert.ToString(temp);
+            for (int i = 0; i < length; i++)
+            {
+                Console.WriteLine("Enter name");
+                var name = Console.ReadLine();
+
+                ///assigns an id to a person
+                
+                int temp = id++;
+                string staffid = Convert.ToString(temp);
 
 
-            var temp1 = new Person(name, staffid);
-            Console.WriteLine(name);
-            Console.WriteLine(staffid);
-            
+                var temp1 = new Person(name, staffid);
+                Console.WriteLine(name);
+                Console.WriteLine(staffid);
 
-            Console.ReadLine();
+
+                Console.ReadLine();
+            }
         }
     }
 }
